@@ -14,17 +14,16 @@
 }
 
 #about_bg {
-    /* background-color: rgb(245, 244, 244); */
-    background-color: rgb(14, 210, 210);
+    background-color: rgb(245, 244, 244);
 }
 
 #topic_bg {
     background-color: rgb(245, 244, 244);
-    background-color: rgb(14, 210, 210);
+
 }
 
 header {
-    background-color: rgb(80, 206, 17);
+    background-color: rgb(0, 0, 0);
     /*The display flex property I have learned on my own*/
     display: flex;
     justify-content: space-between;
