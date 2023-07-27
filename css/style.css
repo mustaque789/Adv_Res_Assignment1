@@ -1,0 +1,704 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    background-image: url(../images/girl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    height: 675px;
+    width: 100%;
+}
+
+#about_bg {
+    background-color: rgb(245, 244, 244);
+}
+
+#topic_bg {
+    background-color: rgb(245, 244, 244);
+}
+
+header {
+    background-color: black;
+    /*The display flex property I have learned on my own*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+}
+
+nav ul li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+a:visited {
+
+    color: blanchedalmond;
+}
+
+a:hover {
+    font-size: 25px;
+}
+
+a:focus {
+    border: 1px solid blanchedalmond;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+section {
+    display: block;
+
+}
+
+#hobbies_sec h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+    color: #433316;
+    background-color: blanchedalmond;
+}
+
+#intro {
+
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#intro h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 600px;
+
+}
+
+#intro p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 600px;
+    padding-top: 30px;
+    padding-right: 40px;
+
+}
+
+#button {
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-right: 40px;
+
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: blanchedalmond;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    height: 70px;
+    background-color: #000;
+    color: blanchedalmond;
+    padding-top: 20px;
+}
+
+#about {
+    background-color: blanchedalmond;
+    color: #000;
+    border: 2px solid black;
+
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    border-radius: 16px;
+
+}
+
+#aboutme {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 20px;
+    color: #433316;
+}
+
+#aboutme p {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+img {
+    height: 400px;
+    width: 350px;
+}
+
+#hobbies video {
+    height: 500px;
+    width: 470px;
+    padding: 5px;
+    border: 3px solid rgb(67, 37, 37);
+    background-color: blanchedalmond;
+}
+
+#hobbies {
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+    margin-left: 20px;
+
+}
+
+#hobbies p {
+    text-align: center;
+    font-size: 20px;
+    color: #433316;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#favourites {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 20px;
+}
+
+#fvrt_sec h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+    color: #433316;
+    background-color: blanchedalmond;
+}
+
+#favourites img {
+    width: 340px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(67, 37, 37);
+    margin: 5px;
+    background-color: blanchedalmond;
+}
+
+#travel_sec h1 {
+
+    font-size: 40px;
+
+}
+
+#travel_sec {
+    text-align: center;
+    color: #433316;
+    margin: 30px;
+    display: flex;
+    /*I have learned on my own how to use flex direction through youtube and W3Schools*/
+    flex-direction: column;
+}
+
+#travel_video video {
+    width: 100%;
+    margin-top: 30px;
+    border: 8px solid rgb(67, 37, 37);
+
+
+}
+
+#gallery {
+    display: flex;
+    /*The flex wrap property I have learned on my own through youtube and W3Schools*/
+    flex-wrap: wrap;
+    margin-left: 140px;
+    margin-right: 140px;
+
+
+}
+
+#gallery img {
+    margin: 20px;
+    border: 3px solid rgb(67, 37, 37);
+    border-radius: 8px;
+}
+
+#travel {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    color: #433316;
+    background-color: blanchedalmond;
+}
+
+@media only screen and (max-width:885px) {
+    #home {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/girl.jpg);
+        /* NEW STYLE THAT I LEARNED ON MY OWN : LINEAR GRADIENT
+            
+            I have learned about it through W3Schools and use it with my background image.
+            This css rule I haven't seen it in class and I have used it first time.*/
+        background-size: cover;
+
+        background-repeat: no-repeat;
+        color: black;
+        height: 675px;
+        width: 100%;
+    }
+
+    #intro h1 {
+
+        margin-left: 50px;
+        color: blanchedalmond;
+    }
+
+    #intro p {
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 50px;
+        padding-top: 30px;
+        padding-right: 40px;
+        color: blanchedalmond;
+
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        background-color: blanchedalmond;
+        color: black;
+        border: none;
+        border-radius: 8px;
+        margin: 20px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hobbies {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #favourites {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+/*CSS FOR TOPIC(FLEXBOX) PAGE*/
+/*I have also applied the flexbox in the above css part.
+  In this section I have added a sidebar and added some lorem ipsum*/
+#topic_bg_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#div3 {
+
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 65%;
+
+}
+
+#div3 img {
+    margin: 10px;
+    border: 3px solid rgb(67, 37, 37);
+    border-radius: 8px;
+    max-height: 100%;
+    max-width: 100%;
+
+}
+
+aside {
+
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    float: right;
+    background-color: blanchedalmond;
+    height: auto;
+    font-size: 25px;
+    font-family: cursive;
+    font-style: italic;
+    padding: 50px 10px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+@media only screen and (max-width:480px) {
+    header {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+
+    }
+
+    nav ul li {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+
+    }
+
+    a:link {
+        text-decoration: none;
+        color: blanchedalmond;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #travel_sec {
+        width: 100%;
+        margin: 0;
+    }
+
+    #section2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+
+
+    #div3 {
+        width: 100%;
+        margin: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    aside {
+        width: 100%;
+
+        font-size: 20px;
+        font-family: cursive;
+        font-style: italic;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: blanchedalmond;
+
+    }
+
+    #div3 img {
+        margin: 20px;
+        border: 3px solid rgb(67, 37, 37);
+        border-radius: 8px;
+
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:786px) {
+    header {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+
+    }
+
+    nav ul li {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+
+    }
+
+    a:link {
+        text-decoration: none;
+        color: blanchedalmond;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    #section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #div3 {
+        display: flex;
+
+
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto;
+
+
+    }
+
+    #div3 img {
+        margin: 20px;
+        border: 3px solid rgb(67, 37, 37);
+        border-radius: 8px;
+        height: 300px;
+        width: 250px;
+    }
+
+    aside {
+
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blanchedalmond;
+        width: 100%;
+
+        font-size: 20px;
+        font-family: cursive;
+        font-style: italic;
+        padding: 20px;
+        margin-top: 20px;
+
+
+    }
+}
+
+
+/*CSS FOR TOPIC(GRID)*/
+
+.topic_grid {
+    background-size:contain;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: "nav nav nav"
+        "heading heading heading"
+        "video video video"
+        "heading2 heading2 heading2"
+        "img1 img2 sidebar"
+        "img3 img4 sidebar"
+        "img5 img6 sidebar"
+        "footer footer footer";
+}
+
+.div1 {
+    grid-area: nav;
+  
+}
+
+.div2 {
+    grid-area: heading;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.div3 {
+    grid-area: video;
+    height:auto;
+    /* height:400px; */
+}
+
+.div4 {
+    grid-area: heading2;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-size: 30px;
+    font-weight: bolder;
+    padding:10px 0;
+}
+
+.div5 {
+    grid-area: img1;
+   
+}
+
+.div6 {
+    grid-area: img2;
+   
+}
+
+.div7 {
+    grid-area: img3;
+   
+}
+
+.div8 {
+    grid-area: img4;
+   
+}
+
+.div9 {
+    grid-area: img5;
+  
+}
+
+.div10 {
+    grid-area: img6;
+    
+}
+
+.div11 {
+    grid-area: sidebar;
+    font-size: large;
+    line-height: 30px;
+    word-spacing: 7px;
+    letter-spacing: 2px;
+    font-weight: medium;
+    font-family: cursive;
+    font-style: italic;
+    background-color: blanchedalmond;
+    overflow: hidden;
+}
+
+.div12 {
+    grid-area: footer;
+    padding-top: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
+
+/* media queries :- */
+
+
+
+/* Tablet (900px) */
+@media (min-width: 481px) and (max-width: 950px) {
+
+    .topic_grid {
+        width:100%;
+        height:100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.3fr 0.1fr 0.2fr  0.2fr 0.2fr  0.2fr 0.2fr 0.1fr;
+     
+        grid-template-areas: "nav nav"
+                              "heading heading"
+                              "video video"
+                              "heading2 heading2"
+                              "img3 img4"
+                              
+                              "img5 img6"
+                              "img1 img2"
+                              
+                              
+                              
+                              "sidebar sidebar"
+                              "footer footer";
+    }
+    .div5, .div6, .div7, .div8, .div9, .div10{
+        margin: 0 auto;
+        text-align: center;
+      
+       
+    }
+    .div11{
+        overflow: visible;
+    }
+
+   
+}
+
+/* Mobile (480px) */
+@media (max-width: 480px) {
+    .topic_grid {
+        width:100%;
+        height:100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.3fr 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr  0.1fr;
+     
+        grid-template-areas: "nav"
+                              
+                               "heading2"
+                              "img1"
+                              "img2"
+                              "img3"
+                              "img4"
+                              "img5"
+                              "img6"
+                              "video"
+                             
+                              "heading"
+                              "sidebar"
+                            
+                              "footer";
+    }
+    .div3 {
+        grid-area: video;
+       
+    }
+    .div2{
+       
+        height:4rem;
+    }
+    .div5, .div6, .div7, .div8, .div9, .div10{
+        margin: 0 auto;
+        text-align: center;
+      
+       
+    }
+    .div11{
+        overflow: visible;
+    }
+   
+}
