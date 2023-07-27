@@ -24,7 +24,7 @@
 }
 
 header {
-    background-color: rgb(206, 17, 17);
+    background-color: rgb(80, 206, 17);
     /*The display flex property I have learned on my own*/
     display: flex;
     justify-content: space-between;
