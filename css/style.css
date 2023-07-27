@@ -20,10 +20,11 @@
 
 #topic_bg {
     background-color: rgb(245, 244, 244);
+    background-color: rgb(14, 210, 210);
 }
 
 header {
-    background-color: black;
+    background-color: rgb(206, 17, 17);
     /*The display flex property I have learned on my own*/
     display: flex;
     justify-content: space-between;
